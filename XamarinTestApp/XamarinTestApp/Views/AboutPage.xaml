@@ -31,17 +31,25 @@
         <ScrollView Grid.Row="1">
             <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
                 <Label Text="App01" FontSize="Title"/>
-                <Label Text="Enter something below:" FontSize="16" Padding="0,0,0,0"/>
-                <Entry x:Name="entry" Text="" ></Entry>
+                <Label Text="Enter the FROM distance" FontSize="16" Padding="0,0,0,0"/>
+                <Entry x:Name="fromDistance" Text="" ></Entry>
 
-                <Picker Title="Select an Item">
+                <Picker Title="Select an FROM unit">
                     <Picker.Items>
                         <x:String>Feet</x:String>
                         <x:String>Miles</x:String>
                         <x:String>Meters</x:String>
                     </Picker.Items>
                 </Picker>
-                               
+
+                <Picker Title="Select an TO unit">
+                    <Picker.Items>
+                        <x:String>Feet</x:String>
+                        <x:String>Miles</x:String>
+                        <x:String>Meters</x:String>
+                    </Picker.Items>
+                </Picker>
+
                 <Button Margin="0,10,0,0" Text="Convert"
                         Command="{Binding OpenWebCommand}"
                         BackgroundColor="{StaticResource Primary}"
