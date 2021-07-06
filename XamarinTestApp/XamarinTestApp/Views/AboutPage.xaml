@@ -42,7 +42,7 @@
                     </Picker.Items>
                 </Picker>
                 <Label Text="Enter the TO unit" FontSize="16" Padding="0,0,0,0"/>
-                <Picker Title="Select an TO unit">
+                <Picker Title="Select an TO Unit">
                     <Picker.Items>
                         <x:String>Feet</x:String>
                         <x:String>Miles</x:String>
