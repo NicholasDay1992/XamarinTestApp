@@ -2,10 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinTestApp.Views.App01">
-    <!--
-    <ContentPage.BindingContext>
-        <vm:App01Model />
-    </ContentPage.BindingContext>-->
+
     <ContentPage.Resources>
         <ResourceDictionary>
             <Color x:Key="Accent">#96a</Color>
