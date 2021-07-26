@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+/* Include */
+using XamarinTestApp.ViewModels;
 
 namespace XamarinTestApp.Views
 {
@@ -15,12 +17,8 @@ namespace XamarinTestApp.Views
         public App01()
         {
             InitializeComponent();
-        }
-
-        /* this method was added by the 'Clicked' property in the XAML Button attribute */
-        private void Convert(object sender, EventArgs e)
-        {
-            (sender as Button).Text = "You pressed this!";
+            /* ADD */
+            BindingContext = new App01ViewModel();
         }
     }
 }

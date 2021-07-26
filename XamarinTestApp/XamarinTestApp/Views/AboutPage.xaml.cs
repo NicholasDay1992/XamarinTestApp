@@ -10,6 +10,7 @@ namespace XamarinTestApp.Views
         public AboutPage()
         {
             InitializeComponent();
+            
         }
         /* this method was added by the 'Clicked' property in the XAML Button attribute */
         private void Button_Clicked(object sender, EventArgs e)
