@@ -13,7 +13,7 @@ namespace XamarinTestApp.ViewModels
         public App01ViewModel()
         {
             Title = "App01";
-            Convert = new Command(async () => await Browser.OpenAsync("https://www.bbc.co.uk"));
+            //Convert = new Command(async () => await Browser.OpenAsync("https://www.bbc.co.uk"));
             /*
             Content = new StackLayout
             {
@@ -24,8 +24,11 @@ namespace XamarinTestApp.ViewModels
             */
         }
 
-        public Command Convert { get; }
+        //public Command Convert { get; }
 
-
+        async void OnButtonClicked(object sender, EventArgs args)
+        {
+            await Browser.OpenAsync("https://www.bbc.co.uk");
+        }
     }
 }

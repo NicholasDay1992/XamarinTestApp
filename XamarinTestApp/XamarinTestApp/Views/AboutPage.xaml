@@ -10,6 +10,10 @@
         <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-    </StackLayout>
+
+            <Button Text="Go to BBC" IsEnabled="True" 
+                    Command="{Binding OpenWebCommand}" />
+        
+        </StackLayout>
 </ContentPage.Content>
 </ContentPage>
