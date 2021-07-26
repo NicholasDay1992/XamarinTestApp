@@ -46,7 +46,7 @@
                 <Label Text="Here is the TO distance" FontSize="16" Padding="0,0,0,0"/>
 
                 <Button Margin="0,10,0,0" Text="Convert"
-                        Command="{Binding OpenWebCommand}"
+                        Command="{Binding Convert}"
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="White" />
             </StackLayout>
