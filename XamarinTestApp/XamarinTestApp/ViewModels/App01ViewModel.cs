@@ -13,22 +13,9 @@ namespace XamarinTestApp.ViewModels
         public App01ViewModel()
         {
             Title = "App01";
-            //Convert = new Command(async () => await Browser.OpenAsync("https://www.bbc.co.uk"));
-            /*
-            Content = new StackLayout
-            {
-                Children = {
-                    new Label { Text = "Welcome to Xamarin.Forms!" }
-                }
-            };
-            */
+            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://www.bbc.co.uk"));
         }
 
-        //public Command Convert { get; }
-
-        async void OnButtonClicked(object sender, EventArgs args)
-        {
-            await Browser.OpenAsync("https://www.bbc.co.uk");
-        }
+        public ICommand OpenWebCommand { get; }
     }
 }
