@@ -17,9 +17,10 @@ namespace XamarinTestApp.Views
             InitializeComponent();
         }
 
-        private async Task Button_ClickedAsync(object sender, EventArgs e)
+        /* this method was added by the 'Clicked' property in the XAML Button attribute */
+        private void Convert(object sender, EventArgs e)
         {
-            await Browser.OpenAsync("https://www.bbc.co.uk");
+            (sender as Button).Text = "You pressed this!";
         }
     }
 }

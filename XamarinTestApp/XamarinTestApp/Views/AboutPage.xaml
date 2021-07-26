@@ -12,7 +12,7 @@
                 HorizontalOptions="CenterAndExpand" />
 
             <Button Text="Go to BBC" IsEnabled="True" 
-                    Command="{Binding OpenWebCommand}" />
+                    Clicked="Button_Clicked" />
         
         </StackLayout>
 </ContentPage.Content>

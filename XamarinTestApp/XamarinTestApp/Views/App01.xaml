@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinTestApp.Views.App01">
+             x:Class="XamarinTestApp.Views.App01"
+             xmlns:vm="clr-namespace:XamarinTestApp.ViewModels"
+             >
+
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -47,7 +50,7 @@
 
                 <Button Margin="0,10,0,0" Text="Convert"
                         IsEnabled="True"
-                        Command="{Binding Convert} "
+                        Clicked="Convert"
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="White" />
                     
